@@ -7,5 +7,5 @@ división entera respectivamente.
 print('Ejercicio 4')
 n= int(input('Ingrese dividiendo'))
 m = int(input('Ingrese divisor'))
-c = 'el cociente es: ', n/m
-r = 'el resto es:', n%m
+print('el cociente es: ', n/m)
+print('el resto es:', n%m)
