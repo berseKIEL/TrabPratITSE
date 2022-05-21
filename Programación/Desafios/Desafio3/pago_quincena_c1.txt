@@ -1,0 +1,20 @@
+Nombre del Empleado: Exequiel Barco
+Horas Trabajadas: 42
+Liquidacion Total: 52500
+
+Nombre del Empleado: Hernan Peinetti
+Horas Trabajadas: 12
+Liquidacion Total: 15000
+
+Nombre del Empleado: Jose Adamo
+Horas Trabajadas: 22
+Liquidacion Total: 27500
+
+Nombre del Empleado: Esteban Trejo
+Horas Trabajadas: 88
+Liquidacion Total: 110000
+
+Nombre del Empleado: Nicolas Herrera
+Horas Trabajadas: 33
+Liquidacion Total: 41250
+
