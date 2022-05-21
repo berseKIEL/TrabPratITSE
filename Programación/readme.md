@@ -12,9 +12,3 @@ Presentación de los TP relacionados a la materia:
 8. **Desafío 3**
 9. **Parcial N°1** (Nota 9.85/10)
 10. **Parical N°1 Recuperatorio** (realizado opcionalmente)
-
-
-#### Explicación de contenido
-- **En negrilla:** Ejercicios por realizar/Ejercicios que se puede realizar
-- _En italica:_ Contenido de aprendizaje/Teoria
-
