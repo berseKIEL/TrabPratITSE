@@ -1,0 +1,4 @@
+Encargado: Juan Ignacio, Cliente: 123, Cantidad por Combo: 1.1.0, Total del Pedido: 750
+Encargado: Juan Ignacio, Cliente: 123, Cantidad por Combo: 1.1.1, Total del Pedido: 1000
+Encargado: Martina, Cliente: 12, Cantidad por Combo: 1.1.0, Total del Pedido: 750
+Encargado: Martina, Cliente: 1, Cantidad por Combo: 2.3.0, Total del Pedido: 1900
