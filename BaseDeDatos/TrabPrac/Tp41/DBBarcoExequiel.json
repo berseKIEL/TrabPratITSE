@@ -1,0 +1,4 @@
+[{"_id":{"$oid":"62b25bcefb7ec92fbfcd30e9"},"nombre":"Ale","edad":22.0,"colores":["verde","azul"],"numeros":[20.0,50.0,11.0]},
+{"_id":{"$oid":"62b25bcefb7ec92fbfcd30ea"},"nombre":"Pepe","edad":15.0,"colores":["rojo","amarillo"],"numeros":[50.0,22.0,10.0,55.0]},
+{"_id":{"$oid":"62b25bcefb7ec92fbfcd30eb"},"nombre":"Coco","edad":18.0,"colores":["rojo","verde"],"numeros":[22.0,70.0,90.0,11.0]},
+{"_id":{"$oid":"62b25bcefb7ec92fbfcd30ec"},"nombre":"Milo","edad":21.0,"colores":["verde","amarillo","amarillo","gris"],"numeros":[202.0,200.0,100.0,50.0,20.0]}]

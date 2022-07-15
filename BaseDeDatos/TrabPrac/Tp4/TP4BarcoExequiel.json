@@ -1,0 +1,156 @@
+[{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a65"
+	},
+	"documento": 40111555,
+	"nombre": "Juan Carlos",
+	"apellido": "Magno",
+	"edad": 22,
+	"direccion": "Av Alamos 3355",
+	"telefonos": [
+		"385-088977",
+		"382-123456",
+		"389-111222"
+	],
+	"correo": "JuanCarloMagno@gmail.com"
+},
+
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a66"
+	},
+	"documento": 42698355,
+	"nombre": "Exequiel Alejandro",
+	"apellido": "Barco",
+	"edad": 22,
+	"direccion": "Calle 147",
+	"telefonos": [
+		"385-6276491"
+	],
+	"correo": "ExequielBarco@gmail.com"
+},
+
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a68"
+	},
+	"documento": 42111221,
+	"nombre": "Juan Roberto",
+	"apellido": "Barco",
+	"edad": 28,
+	"direccion": "Calle 121",
+	"telefonos": [
+		"385-6276493"
+	],
+	"correo": "JuanRobertoBarco@gmail.com"
+},
+
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a69"
+	},
+	"documento": 42111230,
+	"nombre": "Atory",
+	"apellido": "Adamo",
+	"edad": 29,
+	"direccion": "Calle 2",
+	"telefonos": [
+		"385-6276494"
+	],
+	"correo": "AtoryAdamo@gmail.com"
+},
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a6a"
+	},
+	"documento": 42111223,
+	"nombre": "Hernan",
+	"apellido": "Peinetti",
+	"edad": 19,
+	"direccion": "Calle 100",
+	"telefonos": [
+		"385-6276495"
+	]
+},
+
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a6b"
+	},
+	"documento": 42111224,
+	"nombre": "Mara",
+	"apellido": "Santillan",
+	"edad": 18,
+	"direccion": "Calle 99",
+	"telefonos": [
+		"385-6276496"
+	]
+},
+
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a6c"
+	},
+	"documento": 42111225,
+	"nombre": "Nicolas",
+	"apellido": "Calderón",
+	"edad": 19,
+	"direccion": "Calle 100",
+	"telefonos": [
+		"385-6276497"
+	]
+},
+
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a6d"
+	},
+	"documento": 42111226,
+	"nombre": "Nicolas",
+	"apellido": "Acosta",
+	"edad": 20,
+	"direccion": "Calle 21",
+	"telefonos": [
+		"385-6276498"
+	]
+},
+
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a6e"
+	},
+	"documento": 42111227,
+	"nombre": "Exequiel",
+	"apellido": "Cabrera",
+	"edad": 17,
+	"direccion": "Calle 77",
+	"telefonos": [
+		"385-6276499"
+	]
+},
+
+{
+	"_id": {
+		"$oid": "62a688a6df7363c0f2df3a6f"
+	},
+	"documento": 42111228,
+	"nombre": "Marcelo",
+	"apellido": "Douglas",
+	"edad": 16,
+	"direccion": "Calle 80",
+	"telefonos": [
+		"385-6276500"
+	]
+},
+
+{
+	"_id": {
+		"$oid": "62a689531ae831b2a480c9c3"
+	},
+	"documento": 42111222,
+	"apellido": "Teru",
+	"direccion": "Calle 200",
+	"edad": 23,
+	"nombre": "Juan Alejandro"
+}
+]

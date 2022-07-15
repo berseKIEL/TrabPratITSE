@@ -1,0 +1,122 @@
+ITSE - TECNICATURA SUPERIOR EN  PROGRAMACIÓN
+Base de Datos II
+Parcial II - Práctica - 28/06/22
+
+
+Apellido y Nombre: Barco Exequiel
+
+Nota: descargar la base de datos "dbParcial2.json" desde la plataforma e importarla con la coleccion "usuarios"
+(copiar y pegar las sentencias ejecutadas para importar en el punto 8))
+Debajo de cada ítem escriba o pegue solo la sentencia ejecutada para resolver dicho item.
+
+Se trata de una base de datos con una coleccion de viajeros en la cual se almacena el nombre, monto total gastado y los viajes realizados, de cada viaje se almacenan los continentes y países visitados dentro del continente, como así también los km recorridos.
+
+Ejemplo del documento:
+ {"nombre" : "Yony", "monto" : 5000,
+        "viajes" : [{   "continente" : "Oceania",
+                        "paises" : ["Australia", "Nueva Zelanda" ],
+                        "km" : 10000    },
+                    {   "continente" : "Europa",
+                        "paises" : ["Francia", "Italia", "Ucrania"],
+                        "km" : 15000    },
+                   {
+                        "continente" : "Africa",
+                        "paises" : ["Marruecos", "Tunez", "Guinea"],
+                        "km" : 14000    }
+        	]
+}
+
+
+1) Crear la colección viajeros y agregar los siguientes documentos con una sola sentencia.
+
+{ "nombre" : "Ale", "monto" : 1000, "viajes" : [ { "continente" : "Asia", "paises" : [ "India", "China","Singapur" ], "km" : 10000 }, { "continente" : "Sudamerica", "paises" : [ "Bolivia", "Surinam", "Brasil" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Egipto", "Eritrea", "Togo" ], "km" : 14000 } ] }
+{ "nombre" : "Oli", "monto" : 3000, "viajes" : [ { "continente" : "Asia", "paises" : [ "Singapur", "Tailandia" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Liechtenstein", "Dinamarca", "Ucrania" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Libia", "Chad", "Congo" ], "km" : 14000 } ] }
+{ "nombre" : "Sole", "monto" : 5000, "viajes" : [ { "continente" : "Oceania", "paises" : [ "Australia", "Nueva Zelanda" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Francia", "Italia", "Ucrania" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Marruecos", "Tunez", "Guinea" ], "km" : 14000 } ] }
+{ "nombre" : "Zoe", "monto" : 3000, "viajes" : [ { "continente" : "Norteamerica", "paises" : [ "Canada", "EE UU" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Andorra", "Italia", "Grecia" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Egipto", "Sudafrica", "Botsuana" ], "km" : 14000 } ] }
+{ "nombre" : "Aba Nico", "monto" : 3000, "viajes" : [ { "continente" : "Asia", "paises" : [ "Singapur", "Tailandia" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Liechtenstein", "Dinamarca", "Ucrania" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Libia", "Chad", "Congo" ], "km" : 14000 } ] }
+{ "nombre" : "Aba Tido", "monto" : 3000, "viajes" : [ { "continente" : "Asia", "paises" : [ "Singapur", "Tailandia" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Liechtenstein", "Dinamarca", "Ucrania" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Libia", "Chad", "Congo" ], "km" : 14000 } ] }
+
+(5 puntos)
+
+Sentencias:
+use dbParcial2BarcoExequiel
+db.createCollection("viajeros")
+db.viajeros.insertMany([{ "nombre" : "Ale", "monto" : 1000, "viajes" : [ { "continente" : "Asia", "paises" : [ "India", "China","Singapur" ], "km" : 10000 }, { "continente" : "Sudamerica", "paises" : [ "Bolivia", "Surinam", "Brasil" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Egipto", "Eritrea", "Togo" ], "km" : 14000 } ] },
+{ "nombre" : "Oli", "monto" : 3000, "viajes" : [ { "continente" : "Asia", "paises" : [ "Singapur", "Tailandia" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Liechtenstein", "Dinamarca", "Ucrania" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Libia", "Chad", "Congo" ], "km" : 14000 } ] },
+{ "nombre" : "Sole", "monto" : 5000, "viajes" : [ { "continente" : "Oceania", "paises" : [ "Australia", "Nueva Zelanda" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Francia", "Italia", "Ucrania" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Marruecos", "Tunez", "Guinea" ], "km" : 14000 } ] },
+{ "nombre" : "Zoe", "monto" : 3000, "viajes" : [ { "continente" : "Norteamerica", "paises" : [ "Canada", "EE UU" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Andorra", "Italia", "Grecia" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Egipto", "Sudafrica", "Botsuana" ], "km" : 14000 } ] },
+{ "nombre" : "Aba Nico", "monto" : 3000, "viajes" : [ { "continente" : "Asia", "paises" : [ "Singapur", "Tailandia" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Liechtenstein", "Dinamarca", "Ucrania" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Libia", "Chad", "Congo" ], "km" : 14000 } ] },
+{ "nombre" : "Aba Tido", "monto" : 3000, "viajes" : [ { "continente" : "Asia", "paises" : [ "Singapur", "Tailandia" ], "km" : 10000 }, { "continente" : "Europa", "paises" : [ "Liechtenstein", "Dinamarca", "Ucrania" ], "km" : 15000 }, { "continente" : "Africa", "paises" : [ "Libia", "Chad", "Congo" ], "km" : 14000 } ] }
+])
+Resultados (ordenados):
+switched to db dbParcial2BarcoExequiel
+{ "ok" : 1 }
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62bb04ae4029edbe69ce387c"),
+                ObjectId("62bb04ae4029edbe69ce387d"),
+                ObjectId("62bb04ae4029edbe69ce387e"),
+                ObjectId("62bb04ae4029edbe69ce387f"),
+                ObjectId("62bb04ae4029edbe69ce3880"),
+                ObjectId("62bb04ae4029edbe69ce3881")
+        ]
+}
+
+2) Mostrar el nombre de todos los viajeros que visitaron Chad y Marruecos
+(5 puntos)
+
+No hay ninguno que tenga Chad y Marruecos, así que lo cambiare por Chad y Congo
+Sentencias
+db.viajeros.find({$and:[{"viajes.paises":"Chad"},{"viajes.paises":"Congo"}]})
+
+3) Modificar aumentando el monto en 500 a todos los viajeros que visitaron Singapur
+(10 puntos)
+
+Sentencia:
+db.viajeros.updateMany({"viajes.paises":"Singapur"},{$inc:{"monto":500}})
+Resultado:
+{ "acknowledged" : true, "matchedCount" : 4, "modifiedCount" : 4 }
+
+4) Agregar a Sole su visita a España y Portugal
+(10 puntos)
+
+Sentencia:
+db.viajeros.updateOne(
+{$and:[{"nombre":"Sole"},{"viajes.continente":"Europa"}]},
+{$addToset:
+	{"viajes.$.paises":
+		{$each: ["España","Portugal"]}
+		}
+	}
+)
+
+5) Quitarle a Zoe los paises Botsuana y Andorra
+(10 puntos)
+
+Sentencias:
+db.viajeros.updateOne({$and:[{"nombre":"Zoe"},{"viajes.continente":"Europa"}]},{$pop:{"viajes.paises":"Andorra"}})
+db.viajeros.updateOne({$and:[{"nombre":"Zoe"},{"viajes.continente":"Asia"}]},{$pop:{"viajes.paises":"Botsuana"}})
+
+6) Listar todos los viajeros que viajaron a Singapur y gastaron mas de 1000
+(8 puntos)
+db.viajeros.find({$and:[{"viajes.paises":"Singapur"},{"monto":{$gt:1000}}]})
+
+7) Dar de baja todos los viajeros que tengan como parte del nombre a Aba
+(10 puntos)
+Sentencias:
+db.viajeros.remove({"nombre":/Aba/})
+Resultados:
+WriteResult({ "nRemoved" : 2 })
+
+a) Subir este archivo con todas las respuestas con el nombre Parcial2<ApellidoNombre>.json
+b) Exportar y subir a la plataforma la DB (la coleccion viajeros sobre la que trabajo) con el nombre DBParcial2<ApellidoNombre>.json
+Ejemplo: DBParcial2TrejoEmilia.json
+
+8) Escriba las sentencias que utilizo para importar y exportar la base de datos.
+(2 puntos)
+mongoimport --db=dbParcial2Usuarios --collection=usuarios --file="D:\pythonbarco\ParcialMongoDB\Parcial2BarcoExequiel\dbParcial2.json"
+
+mongoexport --collection=viajeros --db=dbParcial2BarcoExequiel --out="C:\data\DBParcial2BarcoExequiel.json"
+
+Fin.

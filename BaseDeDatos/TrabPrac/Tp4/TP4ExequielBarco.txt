@@ -1,0 +1,361 @@
+Crear base de datos:
+use Instituto
+Salida:
+switched to db Instituto
+
+Crear Colección:
+db.createCollection('alumnos')
+Salida:
+{ "ok" : 1 }
+
+Insertar a la colección:
+db.alumnos.insert([
+{
+        "documento" : 40111555,
+        "nombre" : "Juan Carlos",
+        "apellido" : "Magno",
+        "edad" : 22,
+        "direccion" : "Las Heras 2233",
+        "telefonos" : [
+                "385-088977",
+                "382-123456",
+                "389-111222"
+        ]
+},
+{
+        "documento" : 42698355,
+        "nombre" : "Exequiel Alejandro",
+        "apellido" : "Barco",
+        "edad" : 22,
+        "direccion" : "Calle 147",
+        "telefonos" : [
+                "385-6276491",
+        ]
+},
+{
+        "documento" : 42111222,
+        "nombre" : "Juan Alejandro",
+        "apellido" : "Teru",
+        "edad" : 23,
+        "direccion" : "Calle 200",
+        "telefonos" : [
+                "385-6276492",
+        ]
+},
+{
+        "documento" : 42111221,
+        "nombre" : "Juan Roberto",
+        "apellido" : "Barco",
+        "edad" : 28,
+        "direccion" : "Calle 121",
+        "telefonos" : [
+                "385-6276493",
+        ]
+},
+{
+        "documento" : 42111230,
+        "nombre" : "Atory",
+        "apellido" : "Adamo",
+        "edad" : 29,
+        "direccion" : "Calle 2",
+        "telefonos" : [
+                "385-6276494",
+        ]
+},
+{
+        "documento" : 42111223,
+        "nombre" : "Hernan",
+        "apellido" : "Peinetti",
+        "edad" : 19,
+        "direccion" : "Calle 100",
+        "telefonos" : [
+                "385-6276495",
+        ]
+},
+{
+        "documento" : 42111224,
+        "nombre" : "Mara",
+        "apellido" : "Santillan",
+        "edad" : 18,
+        "direccion" : "Calle 99",
+        "telefonos" : [
+                "385-6276496",
+        ]
+},
+{
+        "documento" : 42111225,
+        "nombre" : "Nicolas",
+        "apellido" : "Calderón",
+        "edad" : 19,
+        "direccion" : "Calle 100",
+        "telefonos" : [
+                "385-6276497",
+        ]
+},
+{
+        "documento" : 42111226,
+        "nombre" : "Nicolas",
+        "apellido" : "Acosta",
+        "edad" : 20,
+        "direccion" : "Calle 21",
+        "telefonos" : [
+                "385-6276498",
+        ]
+},
+{
+        "documento" : 42111227,
+        "nombre" : "Exequiel",
+        "apellido" : "Cabrera",
+        "edad" : 17,
+        "direccion" : "Calle 77",
+        "telefonos" : [
+                "385-6276499",
+        ]
+},
+{
+        "documento" : 42111228,
+        "nombre" : "Marcelo",
+        "apellido" : "Douglas",
+        "edad" : 16,
+        "direccion" : "Calle 80",
+        "telefonos" : [
+                "385-6276500",
+        ]
+}
+])
+Salida:
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 11,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+
+Listar todos los alumnos
+db.alumnos.find()
+Salida:
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a65"), "documento" : 40111555, "nombre" : "Juan Carlos", "apellido" : "Magno", "edad" : 22, "direccion" : "Las Heras 2233", "telefonos" : [ "385-088977", "382-123456", "389-111222" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a66"), "documento" : 42698355, "nombre" : "Exequiel Alejandro", "apellido" : "Barco", "edad" : 22, "direccion" : "Calle 147", "telefonos" : [ "385-6276491" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a67"), "documento" : 42111222, "nombre" : "Juan Alejandro", "apellido" : "Teru", "edad" : 23, "direccion" : "Calle 200", "telefonos" : [ "385-6276492" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a68"), "documento" : 42111221, "nombre" : "Juan Roberto", "apellido" : "Barco", "edad" : 28, "direccion" : "Calle 121", "telefonos" : [ "385-6276493" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a69"), "documento" : 42111230, "nombre" : "Atory", "apellido" : "Adamo", "edad" : 29, "direccion" : "Calle 2", "telefonos" : [ "385-6276494" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a6a"), "documento" : 42111223, "nombre" : "Hernan", "apellido" : "Peinetti", "edad" : 19, "direccion" : "Calle 100", "telefonos" : [ "385-6276495" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a6b"), "documento" : 42111224, "nombre" : "Mara", "apellido" : "Santillan", "edad" : 18, "direccion" : "Calle 99", "telefonos" : [ "385-6276496" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a6c"), "documento" : 42111225, "nombre" : "Nicolas", "apellido" : "Calderón", "edad" : 19, "direccion" : "Calle 100", "telefonos" : [ "385-6276497" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a6d"), "documento" : 42111226, "nombre" : "Nicolas", "apellido" : "Acosta", "edad" : 20, "direccion" : "Calle 21", "telefonos" : [ "385-6276498" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a6e"), "documento" : 42111227, "nombre" : "Exequiel", "apellido" : "Cabrera", "edad" : 17, "direccion" : "Calle 77", "telefonos" : [ "385-6276499" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a6f"), "documento" : 42111228, "nombre" : "Marcelo", "apellido" : "Douglas", "edad" : 16, "direccion" : "Calle 80", "telefonos" : [ "385-6276500" ] }
+
+
+Listar todos los alumnos con salida formateada
+db.alumnos.find().pretty()
+Salida:
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a65"),
+        "documento" : 40111555,
+        "nombre" : "Juan Carlos",
+        "apellido" : "Magno",
+        "edad" : 22,
+        "direccion" : "Las Heras 2233",
+        "telefonos" : [
+                "385-088977",
+                "382-123456",
+                "389-111222"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a66"),
+        "documento" : 42698355,
+        "nombre" : "Exequiel Alejandro",
+        "apellido" : "Barco",
+        "edad" : 22,
+        "direccion" : "Calle 147",
+        "telefonos" : [
+                "385-6276491"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a67"),
+        "documento" : 42111222,
+        "nombre" : "Juan Alejandro",
+        "apellido" : "Teru",
+        "edad" : 23,
+        "direccion" : "Calle 200",
+        "telefonos" : [
+                "385-6276492"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a68"),
+        "documento" : 42111221,
+        "nombre" : "Juan Roberto",
+        "apellido" : "Barco",
+        "edad" : 28,
+        "direccion" : "Calle 121",
+        "telefonos" : [
+                "385-6276493"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a69"),
+        "documento" : 42111230,
+        "nombre" : "Atory",
+        "apellido" : "Adamo",
+        "edad" : 29,
+        "direccion" : "Calle 2",
+        "telefonos" : [
+                "385-6276494"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a6a"),
+        "documento" : 42111223,
+        "nombre" : "Hernan",
+        "apellido" : "Peinetti",
+        "edad" : 19,
+        "direccion" : "Calle 100",
+        "telefonos" : [
+                "385-6276495"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a6b"),
+        "documento" : 42111224,
+        "nombre" : "Mara",
+        "apellido" : "Santillan",
+        "edad" : 18,
+        "direccion" : "Calle 99",
+        "telefonos" : [
+                "385-6276496"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a6c"),
+        "documento" : 42111225,
+        "nombre" : "Nicolas",
+        "apellido" : "Calderón",
+        "edad" : 19,
+        "direccion" : "Calle 100",
+        "telefonos" : [
+                "385-6276497"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a6d"),
+        "documento" : 42111226,
+        "nombre" : "Nicolas",
+        "apellido" : "Acosta",
+        "edad" : 20,
+        "direccion" : "Calle 21",
+        "telefonos" : [
+                "385-6276498"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a6e"),
+        "documento" : 42111227,
+        "nombre" : "Exequiel",
+        "apellido" : "Cabrera",
+        "edad" : 17,
+        "direccion" : "Calle 77",
+        "telefonos" : [
+                "385-6276499"
+        ]
+}
+{
+        "_id" : ObjectId("62a688a6df7363c0f2df3a6f"),
+        "documento" : 42111228,
+        "nombre" : "Marcelo",
+        "apellido" : "Douglas",
+        "edad" : 16,
+        "direccion" : "Calle 80",
+        "telefonos" : [
+                "385-6276500"
+        ]
+}
+
+Listar los alumnos que tengan 20 años
+db.alumnos.find({"edad":20})
+Salida:
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a6d"), "documento" : 42111226, "nombre" : "Nicolas", "apellido" : "Acosta", "edad" : 20, "direccion" : "Calle 21", "telefonos" : [ "385-6276498" ] }
+
+Listar los alumnos mayores de 20 años
+db.alumnos.find({"edad":{"$gt":20}})
+Salida:
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a65"), "documento" : 40111555, "nombre" : "Juan Carlos", "apellido" : "Magno", "edad" : 22, "direccion" : "Las Heras 2233", "telefonos" : [ "385-088977", "382-123456", "389-111222" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a66"), "documento" : 42698355, "nombre" : "Exequiel Alejandro", "apellido" : "Barco", "edad" : 22, "direccion" : "Calle 147", "telefonos" : [ "385-6276491" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a67"), "documento" : 42111222, "nombre" : "Juan Alejandro", "apellido" : "Teru", "edad" : 23, "direccion" : "Calle 200", "telefonos" : [ "385-6276492" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a68"), "documento" : 42111221, "nombre" : "Juan Roberto", "apellido" : "Barco", "edad" : 28, "direccion" : "Calle 121", "telefonos" : [ "385-6276493" ] }
+{ "_id" : ObjectId("62a688a6df7363c0f2df3a69"), "documento" : 42111230, "nombre" : "Atory", "apellido" : "Adamo", "edad" : 29, "direccion" : "Calle 2", "telefonos" : [ "385-6276494" ] }
+
+Listar los alumnos menor o igual a 21 años (mostrar sólo el apellido, nombre y documento)
+db.alumnos.find({"edad":{"$lte":21}},{"apellido":1,"nombre":1,"documento":1,"edad":1,"_id":0})
+Salida:
+{ "documento" : 42111223, "nombre" : "Hernan", "apellido" : "Peinetti", "edad" : 19 }
+{ "documento" : 42111224, "nombre" : "Mara", "apellido" : "Santillan", "edad" : 18 }
+{ "documento" : 42111225, "nombre" : "Nicolas", "apellido" : "Calderón", "edad" : 19 }
+{ "documento" : 42111226, "nombre" : "Nicolas", "apellido" : "Acosta", "edad" : 20 }
+{ "documento" : 42111227, "nombre" : "Exequiel", "apellido" : "Cabrera", "edad" : 17 }
+{ "documento" : 42111228, "nombre" : "Marcelo", "apellido" : "Douglas", "edad" : 16 }
+
+Listar los alumnos que tengan “Juan” como parte del nombre (mostrar sólo el apellido, nombre y documento)
+db.alumnos.find({"nombre":/Juan/},{"apellido":1,"nombre":1,"documento":1,"_id":0})
+Salida:
+{ "documento" : 40111555, "nombre" : "Juan Carlos", "apellido" : "Magno" }
+{ "documento" : 42111222, "nombre" : "Juan Alejandro", "apellido" : "Teru" }
+{ "documento" : 42111221, "nombre" : "Juan Roberto", "apellido" : "Barco" }
+
+Listar los alumnos que tengan “Juan” como parte del nombre y sean mayor o igual a 21 años (mostrar sólo el apellido, nombre y documento)
+db.alumnos.find({$and:[{"nombre":/Juan/},{"edad":{"$gte":21}}]},{"apellido":1,"nombre":1,"documento":1,"edad":1,"_id":0})
+Salida:
+{ "documento" : 40111555, "nombre" : "Juan Carlos", "apellido" : "Magno", "edad" : 22 }
+{ "documento" : 42111222, "nombre" : "Juan Alejandro", "apellido" : "Teru", "edad" : 23 }
+{ "documento" : 42111221, "nombre" : "Juan Roberto", "apellido" : "Barco", "edad" : 28 }
+
+Dar de baja al alumno cuyo documento: 42.111.222
+db.alumnos.remove({"documento": 42111222})
+Salida:
+WriteResult({ "nRemoved" : 1 })
+
+Modificar la dirección del documento cuyo nombre es “Juan Carlos”. por la dirección “Av Alamos 3355”
+db.alumnos.update({"nombre":"Juan Carlos"},{$set:{"direccion":"Av Alamos 3355"}})
+Salida:
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+Agregar el campo “correo” a todos los mayores de 20 y actualizarlo con un correo aproximado según el nombre, por ejemplo si se llama Zoe el correo podría ser zoe@gmail.com (hacerlo uno por uno)
+db.alumnos.update({"documento":40111555},{$set:{"correo":"JuanCarloMagno@gmail.com"}})
+db.alumnos.update({"documento":42698355},{$set:{"correo":"ExequielBarco@gmail.com"}})
+db.alumnos.update({"documento":42111221},{$set:{"correo":"JuanRobertoBarco@gmail.com"}})
+db.alumnos.update({"documento":42111230},{$set:{"correo":"AtoryAdamo@gmail.com"}})
+Salida para todas:
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+Incorporar de nuevo al documento 42.111.222 (y todos sus datos) utilizando la opción upsert.
+db.alumnos.updateOne(
+{"documento":42111222},
+{$set:
+{"nombre" : "Juan Alejandro",
+"apellido" : "Teru",
+"edad" : 23,
+"direccion":"Calle 200",
+"telefonos" : ["385-6276492"]
+}},
+{upsert: true});
+Salida:
+{
+    "acknowledged" : true,
+	"matchedCount" : 0,
+    "modifiedCount" : 0,
+    "upsertedId" : ObjectId("62a689531ae831b2a480c9c3")
+}
+
+Quitar el campo telefonos al documento 42.111.222
+db.alumnos.update({"documento" : 42111222}, {$unset: {"telefonos": 1}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+db.alumnos.find({"documento":42111222})
+{ "_id" : ObjectId("62a689531ae831b2a480c9c3"), "documento" : 42111222, "apellido" : "Teru", "direccion" : "Calle 200", "edad" : 23, "nombre" : "Juan Alejandro" }
